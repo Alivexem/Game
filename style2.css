@@ -1,0 +1,107 @@
+
+
+
+body {
+  background-image: url('back.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes shakeBackground {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5px, -5px); }
+  20% { transform: translate(5px, 5px); }
+  30% { transform: translate(-5px, 5px); }
+  40% { transform: translate(5px, -5px); }
+  50% { transform: translate(-5px, -5px); }
+  60% { transform: translate(5px, 5px); }
+  70% { transform: translate(-5px, 5px); }
+  80% { transform: translate(5px, -5px); }
+  90% { transform: translate(-5px, -5px); }
+  1000% { transform: translate(5px, 5px); }
+ 
+}
+
+body.shake {
+  animation-name: shakeBackground;
+  animation-duration: 8s; /* Duration of the shake animation */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 5; /* Animation runs once */
+}
+
+/* Add a class to trigger the animation every 6 seconds */
+
+#btn{
+    height: 70px;
+    width:70px;
+    border-radius:50%;
+    position: fixed;
+    bottom:10px;
+    right:137px;
+    color: red;
+    font-size: 40px;
+    background-color: rgb(0, 255, 0);
+    border:2px solid red;
+}
+#gaza {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.input-container {
+  text-align: center;
+}
+
+input {
+  display: inline-block;
+}
+#is{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top:56px;
+    left:7px;
+    text-align: center;
+    font-size: 20px;
+    color:blue;
+    border: 2px solid blue;
+    
+}
+
+
+.container {
+    width: 100%;
+    text-align: right; /* This aligns the input field to the right */
+}
+
+#gaz{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 8.5%;
+    right: 3%;
+    text-align:center;
+    font-size: 20px;
+    color:green;
+    border: 2px solid red;
+    
+}
+
+
+input{
+    border-radius: 5px;
+    border:2px solid gray;
+    background-color: snow;
+}
+
+#comment{
+    width: 220px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    background-color:black;
+}
